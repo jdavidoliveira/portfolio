@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={quantico.className + roundedMplus.className}>
+      <body className={quantico.className}>
         {children}
       </body>
     </html>
