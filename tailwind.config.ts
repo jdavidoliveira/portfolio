@@ -10,7 +10,24 @@ const config: Config = {
     extend: {
       colors: {
         'primary-black': '#1B1E23',
-      }
+      },
+      keyframes: {
+        animarFoguetes1: {
+          'from': {
+            left: '2%',
+            top: '100%'
+
+          },
+          'to': {
+            left: '100%',
+            top: '0'
+          },
+        },
+      },
+
+      animation: {
+        'foguete': 'animarFoguetes1 5s linear infinite',
+      },
     },
   },
   plugins: [],
