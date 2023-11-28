@@ -1,6 +1,6 @@
 import Header from "@/components/Header/Header";
 import IntroductionSection from "@/components/IntroductionSection";
-import SkillsSection from "@/components/SkillsSection/SkillsSection";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (

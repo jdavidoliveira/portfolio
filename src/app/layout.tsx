@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Quantico, M_PLUS_Rounded_1c } from 'next/font/google'
+import { Quantico } from 'next/font/google'
 
 const quantico = Quantico({
   weight: ['400', '700'],
@@ -8,11 +8,6 @@ const quantico = Quantico({
   variable: '--font-quantico',
 })
 
-const roundedMplus = M_PLUS_Rounded_1c({
-  weight: ['100', '300', '400', '500', '700', '800', '900'],
-  subsets: ['latin'],
-  variable: '--font-rounded-mplus',
-})
 
 export const metadata: Metadata = {
   title: 'Portfolio - João David',

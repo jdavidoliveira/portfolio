@@ -7,17 +7,22 @@ import React, { useEffect, useState } from 'react'
 export default function Header() {
 
     const [isDark, setIsDark] = useState<boolean>(false)
-    const [hours, setHours] = useState<string>("19:12")
+    const [hours, setHours] = useState<string>("Loading")
 
     useEffect(() => {
-        const dateInstance = new Date()
-        const hours = dateInstance.getHours().toString().length > 1 ? dateInstance.getHours().toString() : `0${dateInstance.getHours().toString()}`
-        const minutes = dateInstance.getMinutes().toString().length > 1 ? dateInstance.getMinutes().toString() : `0${dateInstance.getMinutes().toString()}`
+        function setCurrentTime() {
+            const dateInstance = new Date()
+            const hours = dateInstance.getHours().toString().length > 1 ? dateInstance.getHours().toString() : `0${dateInstance.getHours().toString()}`
+            const minutes = dateInstance.getMinutes().toString().length > 1 ? dateInstance.getMinutes().toString() : `0${dateInstance.getMinutes().toString()}`
 
-        const finalDate = `${hours}:${minutes}`
+            const finalDate = `${hours}:${minutes}`
 
-        return setHours(finalDate)
+            return setHours(finalDate)
+        }
+
+        setInterval(setCurrentTime, 1000)
     }, [])
+
 
     return (
         <header className="w-full h-20 bg-primary-black flex justify-center items-center text-white group transition duration-200">

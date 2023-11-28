@@ -23,10 +23,43 @@ const config: Config = {
             top: '0'
           },
         },
+        colorChange: {
+          '0%': {
+            color: '#38bdf8',
+          },
+          '20%': {
+            color: 'rgb(251 113 133)',
+          },
+          '40%': {
+            color: '#a3e635',
+          },
+          '60%': {
+            color: '#ffbcd9',
+          },
+          '80%': {
+            color: '#ffff00',
+          },
+          '100%': {
+            color: '#8b00ff',
+          }
+        },
+        float: {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
+        },
       },
 
       animation: {
         'foguete': 'animarFoguetes1 5s linear infinite',
+        'color-change': 'colorChange 5s linear infinite',
+        'float': 'float 3s ease-in-out infinite',
       },
     },
   },
