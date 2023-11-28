@@ -9,6 +9,15 @@ export default function Header() {
     const [isDark, setIsDark] = useState<boolean>(false)
     const [hours, setHours] = useState<string>("Loading")
 
+    // AVISO DE QUE ESTÁ EM DESENVOLVIMENTO
+    const [avised, setAvised] = useState<boolean>(false)
+    useEffect(() => {
+        if (avised) return
+        setAvised(true)
+        window.alert("Aviso, este portfolio ainda está em desenvolvimento.")
+    }, [])
+
+
     useEffect(() => {
         function setCurrentTime() {
             const dateInstance = new Date()
@@ -32,7 +41,6 @@ export default function Header() {
                     <ul className="flex w-full items-center justify-between gap-4 list-none">
                         <li><Link href="#" className="hover:text-orange-500">Home</Link></li>
                         <li><Link href="#" className="hover:text-orange-500">Projetos</Link></li>
-                        <li><Link href="#" className="hover:text-orange-500">Sobre</Link></li>
                         <li><Link href="#" className="hover:text-orange-500">Contato</Link></li>
                         <li><Link href="#" className="hover:text-orange-500 flex flex-row items-center">Página <ChevronDown /></Link></li>
                     </ul>

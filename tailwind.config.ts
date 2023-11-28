@@ -54,12 +54,30 @@ const config: Config = {
             transform: 'translateY(0)',
           },
         },
+        rotate: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(90deg)',
+          },
+          '50%': {
+            transform: 'rotate(180deg)',
+          },
+          '75%': {
+            transform: 'rotate(270deg)',
+          },
+          '100%': {
+            transform: 'rotate(360deg)',
+          }
+        }
       },
 
       animation: {
         'foguete': 'animarFoguetes1 5s linear infinite',
         'color-change': 'colorChange 5s linear infinite',
         'float': 'float 3s ease-in-out infinite',
+        'rotate': 'rotate 3s step-end infinite',
       },
     },
   },
