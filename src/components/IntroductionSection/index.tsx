@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function IntroductionSection() {
     return (<>
         <section className="w-full flex pt-40 pb-40 items-center justify-center relative">
-            <Rocket className="w-6 h-6 absolute top-[30%] left-[30%] animate-foguete " />
+            {/* <Rocket className="w-6 h-6 absolute top-[30%] left-[30%] animate-foguete " /> */}
             <div className="flex items-center justify-center gap-4">
                 <Image width={300} height={300} alt="Foto do João David" src="https://github.com/lordaval.png" className="rounded-lg w-56" />
                 <div className="flex flex-col items-start gap-1">
@@ -24,7 +24,7 @@ export default function IntroductionSection() {
         </section>
         <section className="w-full flex items-center justify-center">
             <div className="w-8/12 flex items-center justify-center">
-                <p className="text-lg font-bold text-center">Prazer, meu nome é David, tenho 17 anos, e sou garoto de programa. Eu crio soluções para qualquer problema, para qualquer plataforma, e em qualquer infraestutura.</p>
+                <p className="text-lg font-bold text-center">Prazer, meu nome é David, tenho 17 anos, e sou um desenvolvedor Full-Stack.</p>
             </div>
         </section>
     </>

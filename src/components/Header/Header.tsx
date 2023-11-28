@@ -2,11 +2,22 @@
 import { ChevronDown, MoonIcon, SunIcon } from 'lucide-react'
 
 import Link from "next/link"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Header() {
 
     const [isDark, setIsDark] = useState<boolean>(false)
+    const [hours, setHours] = useState<string>("19:12")
+
+    useEffect(() => {
+        const dateInstance = new Date()
+        const hours = dateInstance.getHours().toString().length > 1 ? dateInstance.getHours().toString() : `0${dateInstance.getHours().toString()}`
+        const minutes = dateInstance.getMinutes().toString().length > 1 ? dateInstance.getMinutes().toString() : `0${dateInstance.getMinutes().toString()}`
+
+        const finalDate = `${hours}:${minutes}`
+
+        return setHours(finalDate)
+    }, [])
 
     return (
         <header className="w-full h-20 bg-primary-black flex justify-center items-center text-white group transition duration-200">
@@ -28,7 +39,7 @@ export default function Header() {
                         </button>
                     </div>
                     <div className="flex items-center justify-betweeen border-l border-white px-4 py-2">
-                        {`${new Date().getHours()}:${(new Date().getMinutes() < 9 ? new Date().getMinutes().toString().padStart(2, "0") : new Date().getMinutes()) }`}
+                        {`${hours}`}
                     </div>
 
                 </nav>

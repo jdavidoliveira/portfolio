@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import IntroductionSection from "@/components/IntroductionSection/IntroductionSection";
+import IntroductionSection from "@/components/IntroductionSection";
 import SkillsSection from "@/components/SkillsSection/SkillsSection";
 
 export default function Home() {
