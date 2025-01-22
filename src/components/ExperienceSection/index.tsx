@@ -12,7 +12,7 @@ export default function ExperiencieSection() {
   )
 
   return (
-    <section className="w-full px-10 flex flex-col items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
+    <section className="w-full px-10 flex flex-col items-center sm:pb-0 pb-10 justify-center bg-primary-bg dark:bg-dark-primary-bg">
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ x: 10, opacity: 0 }}
@@ -34,7 +34,7 @@ export default function ExperiencieSection() {
                 />
               ))}
             </div>
-            <div className="flex flex-col h-full px-10 pb-10">
+            <div className="flex flex-col h-full sm:px-10 sm:pb-10">
               <div className="flex items-center justify-between w-full">
                 <h2 className="text-2xl dark:text-white">
                   {currentExperience.roll}

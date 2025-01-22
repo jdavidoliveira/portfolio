@@ -34,11 +34,11 @@ const ScrollToTopButton = () => {
       animate={{ opacity: showButton ? 1 : 0 }}
       transition={{ duration: 0.5 }}
       className={twMerge(
-        'fixed bottom-4 right-4 z-50 dark:bg-black bg-primary-bg hover:opacity-80 p-2 rounded-full shadow-lg dark:border-none border transition duration-700',
+        'fixed bottom-10 right-10 animate-float z-50 dark:bg-black bg-primary-bg hover:opacity-80 p-2 rounded-full shadow-lg dark:border-none border transition duration-500',
         !showButton && 'hidden'
       )}
     >
-      <ArrowUp className="w-6 h-6 text-accent" />
+      <ArrowUp className="size-7 text-accent" />
     </motion.button>
   )
 }

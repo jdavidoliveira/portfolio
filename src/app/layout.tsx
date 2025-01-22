@@ -10,6 +10,7 @@ import SkillsSection from '@/components/SkillsSection'
 import ExperiencieSection from '@/components/ExperienceSection'
 import ProjectsSection from '@/components/ProjectsSection'
 import Footer from '@/components/Footer'
+import { Toaster } from 'sonner'
 
 const quantico = Quantico({
   weight: ['400', '700'],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={quantico.className}>
         <Analytics />
         <SpeedInsights />
+        <Toaster />
         <>
           <Header />
           {children}
