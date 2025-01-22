@@ -4,7 +4,7 @@ import StackCard from './StackCard'
 import { useState } from 'react'
 
 export default function SkillsSection() {
-  const [showMore, setShowMore] = useState(true)
+  const [showMore, setShowMore] = useState(false)
 
   return (
     <section className="w-full flex flex-col sm:py-48 py-10 items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
