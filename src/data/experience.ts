@@ -2,19 +2,19 @@ import { IExperience } from '@/@types/IExperience'
 
 export const experience: IExperience[] = [
   {
-    company: 'GMR Pesquisas',
-    roll: 'Desenvolvedor Full-Stack',
-    date: '01/2024 - Atual',
-    location: 'Remoto - Rio de Janeiro - RJ',
-    description:
-      'Coordeno e desenvolvo um CRM para a realização de tarefas dentro da empresa. Algumas dessas tarefas incluem a importação de um grande volume de dados para um banco próprio, através de um processamento e otimização de dados.'
-  },
-  {
     company: 'Loide Martha',
     roll: 'Suporte de TI',
     date: '02/2024 - Atual',
     location: 'Presencial - Rio de Janeiro - RJ',
     description: `Atuo com desenvolvimento de software e gestão de plataformas, além de ajudar e auxiliar outros funcionários a usarem a plataforma e os softwares desenvolvidos por nós.`
+  },
+  {
+    company: 'GMR Pesquisas',
+    roll: 'Desenvolvedor Full-Stack',
+    date: '01/2024 - 12/2024',
+    location: 'Remoto - Rio de Janeiro - RJ',
+    description:
+      'Coordeno e desenvolvo um CRM para a realização de tarefas dentro da empresa. Algumas dessas tarefas incluem a importação de um grande volume de dados para um banco próprio, através de um processamento e otimização de dados.'
   },
   {
     company: 'Colégio SEICE',

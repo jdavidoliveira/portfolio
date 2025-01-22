@@ -40,7 +40,7 @@ export default async function Page({
   const paginatedRepos = data.slice(startIndex, startIndex + REPOS_PER_PAGE)
 
   return (
-    <main className="w-full min-h-screen mx-auto p-4 pt-16 flex flex-col items-center dark:bg-dark-primary-bg">
+    <main className="w-full min-h-screen mx-auto p-4 pt-28 flex flex-col items-center dark:bg-dark-primary-bg">
       <h1 className="text-2xl font-bold mb-4 text-center">
         GitHub Repositories
       </h1>

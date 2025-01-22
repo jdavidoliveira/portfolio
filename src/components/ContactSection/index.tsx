@@ -2,7 +2,10 @@ import ContactForm from './ContactForm'
 
 export default function ContactSection() {
   return (
-    <section className="bg-secondary-bg py-12 px-6 sm:px-12 lg:px-24">
+    <section
+      id="contact"
+      className="bg-secondary-bg py-12 px-6 sm:px-12 lg:px-24"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-100 mb-6">
           Entre em Contato

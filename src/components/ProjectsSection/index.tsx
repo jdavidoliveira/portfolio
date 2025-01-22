@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
 import { projects } from '@/data/projects'
 import { Search } from 'lucide-react'
+import Link from 'next/link'
 
 export default function ProjectsSection() {
   const [filteredProjects, setFilteredProjects] = useState(projects)
@@ -18,7 +19,10 @@ export default function ProjectsSection() {
   }, [search])
 
   return (
-    <section className="w-full relative z-0 pb-20 sm:min-h-screen flex flex-col items-center bg-secondary-bg">
+    <section
+      id="projects"
+      className="w-full relative z-0 pb-20 sm:min-h-screen flex flex-col items-center bg-secondary-bg"
+    >
       <StarBackground />
       <div className="w-full flex items-center justify-center mt-20 gap-4">
         <Image
@@ -58,6 +62,12 @@ export default function ProjectsSection() {
           <h1 className="text-white text-3xl">Sem resultados</h1>
         </div>
       )}
+      <Link
+        href={'/projetos'}
+        className="text-white text-xl mt-10 hover:underline"
+      >
+        Ver todos os projetos
+      </Link>
     </section>
   )
 }

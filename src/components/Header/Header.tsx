@@ -52,8 +52,10 @@ export default function Header() {
       }`}
     >
       <div className="w-full ml-8 mr-0 flex items-center justify-between">
-        <h1 className="font-bold justify-self-start w-1/12">J. David</h1>
-        <nav className="hidden items-center justify-center group-hover:flex transition duration-200">
+        <h1 className="font-bold justify-self-start md:w-1/12 w-auto">
+          <Link href={'/'}>J. David</Link>
+        </h1>
+        <nav className="hidden items-center justify-center sm:group-hover:flex transition duration-200">
           <ul className="flex w-full items-center justify-between gap-4 list-none">
             <li>
               <Link href="/#introduction" className="hover:text-accent">
@@ -61,12 +63,12 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/projetos" className="hover:text-accent">
+              <Link href="/#projects" className="hover:text-accent">
                 Projetos
               </Link>
             </li>
             <li>
-              <Link href="#contact" className="hover:text-accent">
+              <Link href="/#contact" className="hover:text-accent">
                 Contato
               </Link>
             </li>
