@@ -21,7 +21,7 @@ const quantico = Quantico({
 export const metadata: Metadata = {
   title: 'Portfolio - João David',
   description:
-    'Portfolio pessoal, pertencente á: João David de Oliveira Carneiro. GitHub: https://github.com/jdavidoliveira'
+    'Portfolio pessoal de João David de Oliveira Carneiro. GitHub: https://github.com/jdavidoliveira'
 }
 
 export default function RootLayout({
