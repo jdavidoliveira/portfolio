@@ -36,13 +36,13 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-4xl mx-auto bg-gray-800 dark:bg-[#333] shadow-md rounded-lg p-6 mb-8"
+      className="max-w-4xl mx-auto bg-[#333] shadow-md rounded-lg p-6 mb-8"
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label
             htmlFor="name"
-            className="block text-gray-100 dark:text-[#E0E0E0] font-medium mb-2"
+            className="block text-[#E0E0E0] font-medium mb-2"
           >
             Nome
           </label>
@@ -51,13 +51,13 @@ export default function ContactForm() {
             type="text"
             id="name"
             placeholder="Seu nome"
-            className="w-full px-4 py-3 rounded-lg border border-gray-700 dark:border-[#555] bg-gray-900 dark:bg-[#444] text-gray-100 dark:text-[#E0E0E0] focus:ring-2 focus:ring-blue-500 dark:focus:ring-[#AAAAAA] focus:outline-none"
+            className="w-full px-4 py-3 rounded-lg border border-[#555] bg-[#444] text-[#E0E0E0] focus:ring-2 focus:ring-[#AAAAAA] focus:outline-none"
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-gray-100 dark:text-[#E0E0E0] font-medium mb-2"
+            className="block text-[#E0E0E0] font-medium mb-2"
           >
             E-mail
           </label>
@@ -66,14 +66,14 @@ export default function ContactForm() {
             type="email"
             id="email"
             placeholder="Seu e-mail"
-            className="w-full px-4 py-3 rounded-lg border border-gray-700 dark:border-[#555] bg-gray-900 dark:bg-[#444] text-gray-100 dark:text-[#E0E0E0] focus:ring-2 focus:ring-blue-500 dark:focus:ring-[#AAAAAA] focus:outline-none"
+            className="w-full px-4 py-3 rounded-lg border border-[#555] bg-[#444] text-[#E0E0E0] focus:ring-2 focus:ring-[#AAAAAA] focus:outline-none"
           />
         </div>
       </div>
       <div className="mt-6">
         <label
           htmlFor="message"
-          className="block text-gray-100 dark:text-[#E0E0E0] font-medium mb-2"
+          className="block text-[#E0E0E0] font-medium mb-2"
         >
           Mensagem
         </label>
@@ -82,7 +82,7 @@ export default function ContactForm() {
           id="message"
           placeholder="Escreva sua mensagem"
           rows={5}
-          className="w-full px-4 py-3 rounded-lg border border-gray-700 dark:border-[#555] bg-gray-900 dark:bg-[#444] text-gray-100 dark:text-[#E0E0E0] focus:ring-2 focus:ring-blue-500 dark:focus:ring-[#AAAAAA] focus:outline-none"
+          className="w-full px-4 py-3 rounded-lg border border-[#555] bg-[#444] text-[#E0E0E0] focus:ring-2 focus:ring-[#AAAAAA] focus:outline-none"
         ></textarea>
       </div>
       <div className="mt-6 text-center">

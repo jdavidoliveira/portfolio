@@ -24,7 +24,7 @@ export default function ContactSection() {
           com você!
         </p>
       </div>
-      <div className="max-w-4xl mx-auto bg-gray-800 dark:bg-[#333] shadow-md rounded-lg p-6">
+      <div className="max-w-4xl mx-auto bg-[#333] shadow-md rounded-lg p-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="text-center">
             <h3 className="text-xl font-semibold text-gray-100 mb-2">
