@@ -14,7 +14,7 @@ export const experience: IExperience[] = [
     date: '01/2024 - 12/2024',
     location: 'Remoto - Rio de Janeiro - RJ',
     description:
-      'Coordenei e desenvolvi um CRM para a realização de tarefas dentro da empresa. Algumas dessas tarefas incluem a importação de um grande volume de dados para um banco próprio com processamento e otimização de dados.'
+      'Coordenei e desenvolvi um Sistema (CRM) para a realização de tarefas dentro da empresa. Algumas dessas tarefas incluem a importação de um grande volume de dados para um banco próprio com processamento e otimização de dados.'
   },
   {
     company: 'Colégio SEICE',
