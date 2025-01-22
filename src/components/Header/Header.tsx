@@ -35,12 +35,12 @@ export default function Header() {
         <nav className="hidden items-center justify-center justify-self-center group-hover:flex transition duration-200">
           <ul className="flex w-full items-center justify-between gap-4 list-none">
             <li>
-              <Link href="#introduction" className="hover:text-accent">
+              <Link href="/#introduction" className="hover:text-accent">
                 Introdução
               </Link>
             </li>
             <li>
-              <Link href="#projects" className="hover:text-accent">
+              <Link href="/projetos" className="hover:text-accent">
                 Projetos
               </Link>
             </li>

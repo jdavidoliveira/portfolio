@@ -5,6 +5,7 @@ import {
   ChevronRight,
   Link2
 } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
@@ -17,7 +18,7 @@ interface IGithubRepo {
   homepage?: string
 }
 
-const REPOS_PER_PAGE = 6
+const REPOS_PER_PAGE = 9
 
 async function fetchRepos(): Promise<IGithubRepo[]> {
   const data = await fetch(
@@ -43,7 +44,7 @@ export default async function Page({
       <h1 className="text-2xl font-bold mb-4 text-center">
         GitHub Repositories
       </h1>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12">
         {paginatedRepos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} />
         ))}
@@ -116,27 +117,28 @@ function RepoCard({ repo }: { repo: IGithubRepo }) {
           ))}
         </div>
       </div>
-      <div className="flex items-center gap-2">
-        <a
+      <div className="flex items-center gap-3">
+        {repo.homepage && (
+          <Link
+            href={repo.homepage}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:underline"
+          >
+            Acessar projeto
+            {/* <div className="flex items-center justify-center border rounded-full p-1">
+              <Link2 className="size-6" />
+            </div> */}
+          </Link>
+        )}
+        <Link
           href={repo.html_url}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
           View Repository
-        </a>
-        {repo.homepage && (
-          <a
-            href={repo.homepage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            <div className="flex items-center justify-center border rounded-full p-1">
-              <Link2 className="size-6" />
-            </div>
-          </a>
-        )}
+        </Link>
       </div>
     </li>
   )

@@ -3,6 +3,7 @@ import IntroductionSection from '@/components/IntroductionSection'
 import ProjectsSection from '@/components/ProjectsSection'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 import SkillsSection from '@/components/SkillsSection'
+import UezSection from '@/components/UezSection'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsSection />
       <ExperiencieSection />
       <ProjectsSection />
+      <UezSection />
     </main>
   )
 }
