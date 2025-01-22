@@ -7,10 +7,10 @@ export default function SkillsSection() {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <section className="w-full flex flex-col sm:py-48 py-10 items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
+    <section className="w-full flex flex-col sm:py-48 py-32 items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
       <div className="w-full flex items-center justify-center">
         <div className="w-full flex flex-col items-center gap-8">
-          <h1 className="sm:text-3xl text-xl font-medium dark:text-white text-center px-5">
+          <h1 className="sm:text-3xl text-xl font-semibold sm:font-medium dark:text-white text-center px-5">
             Principais tecnologias que uso no meu dia-a-dia
           </h1>
           <div className="bg-secondary-bg flex items-center justify-between w-full sm:w-auto gap-2 sm:gap-6 sm:h-32 sm:p-10 p-4 sm:rounded-lg">
@@ -25,7 +25,7 @@ export default function SkillsSection() {
           </div>
           {showMore && (
             <>
-              <h1 className="sm:text-3xl text-xl font-medium dark:text-white text-center px-5">
+              <h1 className="sm:text-3xl text-xl font-semibold sm:font-medium dark:text-white text-center px-5">
                 Banco de dados
               </h1>
               <div className="bg-secondary-bg flex items-center justify-between w-full sm:w-auto gap-2 sm:gap-6 sm:h-32 sm:p-10 p-4 sm:rounded-lg">
@@ -41,7 +41,7 @@ export default function SkillsSection() {
                 <StackCard name="Postgres" photoUrl="/stacks/postgres.png" />
                 <StackCard name="Redis" photoUrl="/stacks/redis.svg" />
               </div>
-              <h1 className="sm:text-3xl text-xl font-medium dark:text-white text-center px-5">
+              <h1 className="sm:text-3xl text-xl font-semibold sm:font-medium dark:text-white text-center px-5">
                 Algumas ferramentas
               </h1>
               <div className="bg-secondary-bg flex items-center justify-between w-full sm:w-auto gap-2 sm:gap-6 sm:h-32 sm:p-10 p-4 sm:rounded-lg">
