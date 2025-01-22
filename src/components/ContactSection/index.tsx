@@ -66,7 +66,7 @@ export default function ContactSection() {
               Currículo
             </h3>
             <a
-              href="/curriculo.pdf" // Certifique-se de ter o arquivo no diretório público
+              href="/curriculo.pdf"
               download
               className="text-blue-400 hover:underline"
             >
@@ -81,7 +81,7 @@ export default function ContactSection() {
           trabalhar juntos!
         </p>
         <a
-          href="https://wa.me/5551987654321" // Substitua pelo seu número no formato internacional
+          href="https://wa.me/5521982964498" // Substitua pelo seu número no formato internacional
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-dark-primary-bg text-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-accent/90 transition"
