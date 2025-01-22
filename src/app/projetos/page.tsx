@@ -41,7 +41,7 @@ export default async function Page({
 
   return (
     <main className="w-full min-h-screen mx-auto p-4 pt-28 flex flex-col items-center dark:bg-dark-primary-bg">
-      <h1 className="text-2xl font-bold mb-4 text-center">
+      <h1 className="text-2xl dark:text-white font-bold mb-4 text-center">
         GitHub Repositories
       </h1>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12">
