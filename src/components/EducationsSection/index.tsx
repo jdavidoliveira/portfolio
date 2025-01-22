@@ -4,7 +4,7 @@ import React from 'react'
 
 const EducationSection = () => {
   return (
-    <section className="bg-gray-50 dark:bg-secondary-bg py-10">
+    <section className="bg-primary-bg dark:bg-secondary-bg py-10">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
           Formação Acadêmica

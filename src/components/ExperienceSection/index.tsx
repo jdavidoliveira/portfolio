@@ -12,7 +12,7 @@ export default function ExperiencieSection() {
   )
 
   return (
-    <section className="w-full px-10 flex flex-col items-center sm:pb-0 pb-10 pt-20 justify-center bg-gray-50 dark:bg-dark-primary-bg">
+    <section className="w-full px-10 flex flex-col items-center sm:pb-0 pb-10 pt-20 justify-center bg-primary-bg dark:bg-dark-primary-bg">
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ x: 10, opacity: 0 }}

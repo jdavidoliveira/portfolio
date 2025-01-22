@@ -9,7 +9,7 @@ import UezSection from '@/components/UezSection'
 
 export default function Home() {
   return (
-    <main className="bg-gray-50">
+    <main className="bg-primary-bg">
       <ScrollToTopButton />
       <IntroductionSection />
       <SkillsSection />

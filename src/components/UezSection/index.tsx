@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function UezSection() {
   return (
-    <section className="bg-gray-50 dark:bg-dark-primary-bg py-12 px-6 sm:px-12 lg:px-24">
+    <section className="bg-primary-bg dark:bg-dark-primary-bg py-12 px-6 sm:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">
           Conheça a{' '}
