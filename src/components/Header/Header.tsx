@@ -1,5 +1,5 @@
 'use client'
-import { ChevronDown, MoonIcon, SunIcon } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -7,14 +7,6 @@ import DarkmodeSwitch from './DarkmodeSwitch'
 
 export default function Header() {
   const [hours, setHours] = useState<string>('Loading')
-
-  // AVISO DE QUE ESTÁ EM DESENVOLVIMENTO
-  // const [avised, setAvised] = useState<boolean>(false)
-  // useEffect(() => {
-  //   if (avised) return
-  //   setAvised(true)
-  //   window.alert('Aviso, este portfolio ainda está em desenvolvimento.')
-  // }, [])
 
   useEffect(() => {
     function setCurrentTime() {
@@ -37,32 +29,24 @@ export default function Header() {
   }, [])
 
   return (
-    <header className="w-full h-20 bg-primary-black flex justify-center items-center text-white group transition duration-200">
+    <header className="w-full h-20 bg-secondary-bg flex justify-center items-center text-white group transition duration-200">
       <div className="w-full ml-8 mr-0 flex items-center justify-between">
         <h1 className="font-bold justify-self-start w-1/12">J. David</h1>
         <nav className="hidden items-center justify-center justify-self-center group-hover:flex transition duration-200">
           <ul className="flex w-full items-center justify-between gap-4 list-none">
             <li>
-              <Link href="#" className="hover:text-orange-500">
-                Home
+              <Link href="#introduction" className="hover:text-accent">
+                Introdução
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-orange-500">
+              <Link href="#projects" className="hover:text-accent">
                 Projetos
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-orange-500">
+              <Link href="#contact" className="hover:text-accent">
                 Contato
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="hover:text-orange-500 flex flex-row items-center"
-              >
-                Página <ChevronDown />
               </Link>
             </li>
           </ul>

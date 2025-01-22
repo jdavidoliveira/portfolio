@@ -27,31 +27,17 @@ export default function ProjectCard({
   const iconFromCategory = () => {
     switch (category) {
       case 'FRONTEND':
-        return <Wallpaper />
+        return <Wallpaper className="dark:text-white" />
       case 'BACKEND':
-        return <Database />
+        return <Database className="dark:text-white" />
       case 'DESKTOP':
-        return <AppWindow />
+        return <AppWindow className="dark:text-white" />
       case 'MOBILE':
-        return <TabletSmartphone />
+        return <TabletSmartphone className="dark:text-white" />
       default:
         return '🌐'
     }
   }
-  // const iconFromCategory = (category: string) => {
-  //   switch (category) {
-  //     case 'FRONTEND':
-  //       return '🌐'
-  //     case 'BACKEND':
-  //       return '📦'
-  //     case 'DESKTOP':
-  //       return '💻'
-  //     case 'MOBILE':
-  //       return '📱'
-  //     default:
-  //       return '🌐'
-  //   }
-  // }
 
   return (
     <div className="flex items-center w-full justify-center bg-[#dedede] relative">
@@ -61,7 +47,7 @@ export default function ProjectCard({
       >
         {iconFromCategory()}
       </div>
-      <div className="w-full h-full flex flex-col gap-2 p-6 dark:bg-[#333] dark:text-white bg-white">
+      <div className="w-full h-full flex flex-col gap-2 p-6 dark:bg-[#333] dark:text-white bg-primary-bg">
         <div className="flex-grow">
           <h1 className="text-2xl font-bold">{formattedTitle}</h1>
           <p className="text-base font-medium h-16 hover:overflow-y-auto transition overflow-hidden leading-5">
@@ -80,7 +66,7 @@ export default function ProjectCard({
           {repoUrl && (
             <Link
               href={repoUrl}
-              className="border p-2 rounded-3xl min-w-[85px] sm:w-auto w-full flex items-center justify-center hover:bg-[#dedede] transition"
+              className="border py-2 px-3 rounded-3xl min-w-[85px] sm:w-auto w-full flex items-center justify-center hover:bg-[#dedede] transition"
               target="_blank"
             >
               Repositório
@@ -89,7 +75,7 @@ export default function ProjectCard({
           {liveProjectUrl && (
             <Link
               href={liveProjectUrl}
-              className="border p-2 rounded-3xl min-w-[85px] sm:w-auto w-full flex items-center justify-center bg-primary-black hover:bg-orange-500 transition text-white"
+              className="border p-2 rounded-3xl min-w-[85px] sm:w-auto w-full flex items-center justify-center bg-secondary-bg hover:bg-accent transition text-white"
               target="_blank"
             >
               Acessar
@@ -110,7 +96,7 @@ function Stack({ name }: { name: string }) {
   return (
     <button
       onClick={(e) => e.preventDefault()}
-      className="border p-1.5 rounded-xl cursor-default hover:bg-[#dedede] transition"
+      className="border py-1.5 px-2 rounded-xl cursor-default hover:bg-[#dedede] transition"
     >
       {name}
     </button>

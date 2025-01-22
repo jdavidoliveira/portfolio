@@ -7,7 +7,7 @@ import AnimatedH2 from './AnimatedH2'
 export default function IntroductionSection() {
   return (
     <>
-      <section className="w-full flex md:py-40 py-20 items-center justify-center relative bg-white dark:bg-primary-dark">
+      <section className="w-full flex md:py-40 py-20 items-center justify-center relative bg-primary-bg dark:bg-dark-primary-bg">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 relative">
           {/* <Rocket
             size={300}
@@ -55,7 +55,7 @@ export default function IntroductionSection() {
           </div>
         </div>
       </section>
-      <section className="w-full flex items-center justify-center bg-white dark:bg-primary-dark">
+      <section className="w-full flex items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
         <div className="w-10/12 flex items-center justify-center">
           <p className="text-xl font-bold text-center dark:text-white">
             Prazer, meu chamo David e sou um desenvolvedor de software. Crio

@@ -39,7 +39,7 @@ export default async function Page({
   const paginatedRepos = data.slice(startIndex, startIndex + REPOS_PER_PAGE)
 
   return (
-    <main className="w-full mx-auto p-4 pt-16 flex flex-col items-center dark:bg-primary-dark">
+    <main className="w-full min-h-screen mx-auto p-4 pt-16 flex flex-col items-center dark:bg-dark-primary-bg">
       <h1 className="text-2xl font-bold mb-4 text-center">
         GitHub Repositories
       </h1>
@@ -98,11 +98,11 @@ function RepoCard({ repo }: { repo: IGithubRepo }) {
     >
       <div className="flex-grow">
         <div className="flex items-center gap-2">
-          <BookMarked className="size-6" />
-          <h2 className="text-xl font-semibold">{repo.name}</h2>
+          <BookMarked className="size-6 dark:text-white" />
+          <h2 className="text-xl font-semibold dark:text-white">{repo.name}</h2>
         </div>
 
-        <p className="text-gray-600">
+        <p className="text-gray-600 dark:text-white/80 mt-1">
           {repo.description
             ? repo.description.slice(0, 100) +
               `${repo.description.length > 100 ? '...' : ''}`

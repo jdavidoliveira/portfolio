@@ -18,7 +18,7 @@ export default function ProjectsSection() {
   }, [search])
 
   return (
-    <section className="w-full relative z-0 pb-20 min-h-screen flex flex-col items-center bg-primary-black">
+    <section className="w-full relative z-0 pb-20 min-h-screen flex flex-col items-center bg-secondary-bg">
       <StarBackground />
       <div className="w-full flex items-center justify-center mt-20 gap-4">
         <Image

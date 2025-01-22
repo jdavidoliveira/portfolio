@@ -37,7 +37,7 @@ export default function StackCard({
 
   function HoverCard() {
     return (
-      <div className="w-[200%] items-center bg-primary-black border-2 border-orange-500 rounded-lg absolute top-full left-1/2 transform -translate-x-1/2 justify-center hidden group-hover:flex">
+      <div className="w-[200%] items-center bg-secondary-bg border-2 border-accent rounded-lg absolute top-full left-1/2 transform -translate-x-1/2 justify-center hidden group-hover:flex">
         <div className="w-8/12 flex flex-col p-2 items-center text-white justify-center">
           {children}
         </div>

@@ -12,7 +12,7 @@ export default function ExperiencieSection() {
   )
 
   return (
-    <section className="w-full px-10 flex flex-col items-center justify-center bg-white dark:bg-primary-dark">
+    <section className="w-full px-10 flex flex-col items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ x: 10, opacity: 0 }}
@@ -70,7 +70,8 @@ function TabButton({ title, active, ...props }: TabButtonProps) {
       {...props}
       className={twMerge(
         'dark:text-white p-4 shadow-sm md:text-left text-center md:min-w-56',
-        active && 'bg-black text-white dark:bg-white dark:text-black'
+        active &&
+          'bg-black text-white dark:bg-primary-bg dark:text-black border-2 border-accent'
       )}
     >
       {title}
