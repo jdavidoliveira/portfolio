@@ -40,14 +40,14 @@ export default function ProjectCard({
   }
 
   return (
-    <div className="flex items-center w-full justify-center bg-[#dedede] relative">
+    <div className="flex items-center w-full justify-center bg-[#dedede] dark:bg-[#333] relative rounded-xl">
       <div
         className="absolute top-4 right-4 hover:scale-105 transition duration-250"
         title={category}
       >
         {iconFromCategory()}
       </div>
-      <div className="w-full h-full flex flex-col gap-2 p-6 dark:bg-[#333] dark:text-white bg-primary-bg">
+      <div className="w-full h-full flex flex-col gap-2 p-6 dark:bg-[#333] rounded-xl dark:text-white bg-primary-bg">
         <div className="flex-grow">
           <h1 className="text-2xl font-bold">{formattedTitle}</h1>
           <p className="text-base font-medium h-16 hover:overflow-y-auto transition overflow-hidden leading-5">

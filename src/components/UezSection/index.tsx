@@ -26,11 +26,12 @@ export default function UezSection() {
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
             <li>Criação e desenvolvimento da plataforma.</li>
             <li>
-              Planejamento estratégico e design da experiência do usuário.
+              Planejamento estratégico e liderança de um time de
+              desenvolvedores.
             </li>
             <li>
-              Implementação de funcionalidades-chave como o sistema de chat e
-              orçamentos.
+              Implementação e controle de infraestrutura, hospedagem e serviços
+              externos.
             </li>
           </ul>
         </div>
@@ -40,8 +41,8 @@ export default function UezSection() {
           </h3>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
             <li>
-              Oferece serviços como programação, design, videomaking e social
-              media.
+              Oferece serviços de diversas áreas, como programação, design,
+              videomaking e social media.
             </li>
             <li>
               Conecta diretamente profissionais e clientes com total segurança.

@@ -1,5 +1,4 @@
 'use client'
-import { ChevronDown } from 'lucide-react'
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -7,6 +6,8 @@ import DarkmodeSwitch from './DarkmodeSwitch'
 
 export default function Header() {
   const [hours, setHours] = useState<string>('Loading')
+  const [showHeader, setShowHeader] = useState<boolean>(true)
+  const [lastScrollPos, setLastScrollPos] = useState<number>(0)
 
   useEffect(() => {
     function setCurrentTime() {
@@ -25,14 +26,34 @@ export default function Header() {
       return setHours(finalDate)
     }
 
-    setInterval(setCurrentTime, 1000)
+    const interval = setInterval(setCurrentTime, 1000)
+    return () => clearInterval(interval)
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY
+      if (currentScrollPos < lastScrollPos || currentScrollPos === 0) {
+        setShowHeader(true)
+      } else {
+        setShowHeader(false)
+      }
+      setLastScrollPos(currentScrollPos)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollPos])
+
   return (
-    <header className="w-full h-20 bg-secondary-bg flex justify-center items-center text-white group transition duration-200">
+    <header
+      className={`fixed w-full h-20 bg-secondary-bg flex z-50 justify-center group items-center text-white transition-transform duration-300 ${
+        showHeader ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
       <div className="w-full ml-8 mr-0 flex items-center justify-between">
         <h1 className="font-bold justify-self-start w-1/12">J. David</h1>
-        <nav className="hidden items-center justify-center justify-self-center group-hover:flex transition duration-200">
+        <nav className="hidden items-center justify-center group-hover:flex transition duration-200">
           <ul className="flex w-full items-center justify-between gap-4 list-none">
             <li>
               <Link href="/#introduction" className="hover:text-accent">
@@ -59,7 +80,6 @@ export default function Header() {
             {`${hours}`}
           </div>
         </nav>
-        {/* <p>Desenvolvido por <a href="https://github.com/jdavidoliveira">João David de Oliveira Carneiro</a></p> */}
       </div>
     </header>
   )

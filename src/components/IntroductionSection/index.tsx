@@ -7,12 +7,8 @@ import AnimatedH2 from './AnimatedH2'
 export default function IntroductionSection() {
   return (
     <>
-      <section className="w-full flex md:py-40 py-20 items-center justify-center relative bg-primary-bg dark:bg-dark-primary-bg">
+      <section className="w-full flex md:pb-40 md:pt-56 py-20 items-center justify-center relative bg-primary-bg dark:bg-dark-primary-bg">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 relative">
-          {/* <Rocket
-            size={300}
-            className="w-6 h-6 absolute bottom-full right-full animate-float"
-          /> */}
           <Image
             width={300}
             height={300}
