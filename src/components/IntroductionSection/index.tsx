@@ -54,8 +54,9 @@ export default function IntroductionSection() {
       <section className="w-full flex items-center justify-center bg-primary-bg dark:bg-dark-primary-bg">
         <div className="w-10/12 flex items-center justify-center">
           <p className="text-xl font-bold text-center dark:text-white">
-            Prazer, meu chamo David e sou um desenvolvedor de software. Crio
-            soluções eficientes para diversas plataformas e infraestruturas.
+            Prazer, me chamo David, um desenvolvedor de software dedicado a
+            criar soluções eficientes para diferentes plataformas e
+            infraestruturas.
           </p>
         </div>
       </section>
